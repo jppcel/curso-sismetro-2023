@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      label{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row mt-2">
+      <div class="col-8 offset-2">
+        <form>
+          <label for="data">Data</label>
+          <input id="data" type="date" class="form-control"/>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" class="form-control" required/>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" class="form-control" required/>
+          <label for="tipo">Tipo:</label>
+          <select id="tipo" class="form-select">
+            <option>Tipo 1</option>
+            <option>Tipo 2</option>
+            <option>Tipo 3</option>
+          </select>
+          <label>Qual a circunferência do planeta Terra?</label><br/>
+          <label>
+            <input type="radio" name="pergunta1" value="1"/> 40.000 km
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta1" value="2"/> 40.075 km
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta1" value="3"/> 40.175 km
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta1" value="4"/> 40.095 km
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta1" value="5"/> 40.076 km
+          </label>
+          <br/><br />
+          <label>Qual é o nome da linha imaginária que divide a terra em dois hemisférios?</label><br/>
+          <label>
+            <input type="radio" name="pergunta2" value="1"/> Linha de Capricórnio
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta2" value="2"/> Trópico de Câncer
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta2" value="3"/> Linha do Equador
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta2" value="4"/> Trópico do Equador
+          </label><br/>
+          <label>
+            <input type="radio" name="pergunta2" value="5"/> Linha de Capricórnio
+          </label>
+
+          <br/>
+          <br/>
+          
+          <label>
+            <input type="checkbox" name="aceito"/> Aceito
+          </label><br/>
+             <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="reset" class="btn btn-danger">Resetar</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
