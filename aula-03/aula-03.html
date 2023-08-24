@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      label{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row mt-2">
+      <div class="col-8 offset-2">
+        <form>
+          <label for="arquivo">Arquivo</label>
+          <input id="arquivo" type="file" class="form-control"/>
+
+          <label>Data:</label>
+          <input type="date" class="form-control" />
+
+          <label>Data e Hora:</label>
+          <input type="datetime" class="form-control" />
+
+          <label>Número:</label>
+          <input type="number" class="form-control" value=500 required />
+
+          <input type="hidden" class="form-control" value="" />
+
+          <label>
+            <input type="checkbox" /> Caixa de Seleção
+          </label>
+
+          <br/>
+          <label>
+            <input type="radio" name="opcao" value="o1" /> Opção 1
+          </label><br/>
+          <label>
+            <input type="radio" name="opcao" value="o2" /> Opção 2
+          </label><br/>
+          <label>
+            <input type="radio" name="opcao" value="o3" /> Opção 3
+          </label>
+
+          <br/>
+          <br/>
+
+          <select class="form-select">
+            <optgroup label="teste"/>
+            <option value="1">Opção 1</option>
+            <option>Opção 2</option>
+            <optgroup label="teste"/>
+            <option>Opção 3</option>
+            <optgroup label="teste"/>
+          </select>
+
+          <br/>
+          <br/>
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

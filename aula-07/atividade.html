@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <style>
+        #mais-que-800{
+            display: none;
+        }
+        *{
+            font-size: 20px;
+        }
+        @media (min-width: 800px){
+            *{
+                font-size: 17px;
+            }
+            #mais-que-800{
+                display: block;
+            }
+            #menos-que-ou-800{
+                display: none;
+            }
+        }
+        header{
+            text-align: center;
+        }
+        header img{
+            width: 7rem;
+        }
+        h1{
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        h2{
+            width: 3rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #div-text-1{
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+        #div-text-2{
+            font-family: serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="capivara.png" />
+    </header>
+    <h1>Texto 1</h1>
+    <div id="div-text-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue vel turpis in porta. Nulla lobortis feugiat
+        placerat. Phasellus congue ornare ligula, nec tempus ex pellentesque sit amet. Fusce quis suscipit turpis. Vivamus
+        vulputate, urna at ultricies scelerisque, tortor leo faucibus arcu, eu fringilla nibh purus id lectus. Duis ac diam et
+        orci ullamcorper porttitor vitae non tellus.
+    </div>
+    <h2>Texto 2</h2>
+    <div id="div-text-2">
+        Proin neque eros, ultricies ut vulputate vel, rhoncus dignissim leo. Duis
+        ac neque nec turpis varius porta. Aenean diam nisl, posuere quis velit non, tincidunt ornare nisl. Vivamus non posuere
+        arcu. Nunc mi nisl, suscipit nec velit a, gravida imperdiet felis. Cras posuere iaculis orci, et rhoncus justo posuere
+        sed. Nulla facilisi. Nam nec rhoncus sem. Curabitur a mauris ut nibh rhoncus tempor. Integer gravida ante gravida velit
+        aliquam posuere.
+    </div>
+    <p id="menos-que-ou-800">font-size: 20px</p>
+    <p id="mais-que-800"> font-size: 17px</p>
+</body>
+
+</html>
