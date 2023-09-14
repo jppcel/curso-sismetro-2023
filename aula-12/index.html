@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+        <title>Aula 12</title>
+    </head>
+
+    <body>
+        <script>
+            var a = [];
+            a[2] = 120;
+            a[7] = 0;
+            console.log(a);
+
+            var fibonacci = [];
+            fibonacci[0] = 1;
+            fibonacci[1] = 1;
+
+            var c = 2;
+
+            while (c < 100){
+                fibonacci[c] = fibonacci[c-1] + fibonacci[c-2];
+                c++;
+            }
+            console.log(fibonacci);
+
+            var Fibonacci = [];
+            Fibonacci[0] = 1;
+            Fibonacci[1] = 1;
+
+            for (var d = 2; d < 100; d++) {
+                Fibonacci[d] = Fibonacci[d - 1] + Fibonacci[d - 2];
+            }
+            console.log(Fibonacci);
+
+            var fibonacci3 = [];
+            fibonacci3[0] = 1;
+            fibonacci3[1] = 1;
+
+            while (fibonacci3.length < 100) {
+                fibonacci3[fibonacci3.length] = fibonacci3[fibonacci3.length - 1] + fibonacci3[fibonacci3.length - 2];
+            }
+            console.log(fibonacci3);
+        </script>
+    </body>
+
+</html>
