@@ -11,7 +11,22 @@ function divisao(n1, n2) {
     return n1 / n2;
 }
 
-function somar(){
+function somar() {
     document.getElementById("resultado").value = soma(Number(document.getElementById("n1").value),
-            Number(document.getElementById("n2").value));
+        Number(document.getElementById("n2").value));
+}
+
+function subtrair() {
+    document.getElementById("resultado").value = subtracao(Number(document.getElementById("n1").value),
+        Number(document.getElementById("n2").value));
+}
+
+function multiplicar() {
+    document.getElementById("resultado").value = multiplicacao(Number(document.getElementById("n1").value),
+        Number(document.getElementById("n2").value));
+}
+
+function dividir() {
+    document.getElementById("resultado").value = divisao(Number(document.getElementById("n1").value),
+        Number(document.getElementById("n2").value));
 }
